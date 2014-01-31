@@ -1,3 +1,61 @@
-30 Jan 2014 20:54:20,459 INFO  ~ Starting C:\play\yabe
-30 Jan 2014 20:54:21,771 WARN  ~ You're running Play! in DEV mode
-30 Jan 2014 20:54:21,943 INFO  ~ Listening for HTTP on port 9000 (Waiting a first request to start) ...
+30 Jan 2014 23:07:21,739 INFO  ~ Starting C:\play\yabe
+30 Jan 2014 23:07:23,084 WARN  ~ You're running Play! in DEV mode
+30 Jan 2014 23:07:23,259 INFO  ~ Listening for HTTP on port 9000 (Waiting a first request to start) ...
+30 Jan 2014 23:07:30,779 INFO  ~ Connected to jdbc:h2:mem:play;MODE=MYSQL;LOCK_MODE=0
+30 Jan 2014 23:07:32,568 INFO  ~ Application 'yabe' is now started !
+30 Jan 2014 23:18:55,255 ERROR ~ 
+
+@6h57mjkk5
+Internal Server Error (500) for request GET /posts/3
+
+Template execution error (In /app/views/Application/show.html around line 4)
+Execution error occured in template /app/views/Application/show.html. Exception raised was NullPointerException : Cannot get property 'title' on null object.
+
+play.exceptions.TemplateExecutionException: Cannot get property 'title' on null object
+	at play.templates.BaseTemplate.throwException(BaseTemplate.java:86)
+	at play.templates.GroovyTemplate.internalRender(GroovyTemplate.java:272)
+	at play.templates.Template.render(Template.java:26)
+	at play.templates.GroovyTemplate.render(GroovyTemplate.java:202)
+	at play.mvc.results.RenderTemplate.<init>(RenderTemplate.java:24)
+	at play.mvc.Controller.renderTemplate(Controller.java:662)
+	at play.mvc.Controller.renderTemplate(Controller.java:642)
+	at play.mvc.Controller.render(Controller.java:699)
+	at controllers.Application.show(Application.java:27)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.NullPointerException: Cannot get property 'title' on null object
+	at /app/views/Application/show.html.(line:4)
+	at play.templates.GroovyTemplate.internalRender(GroovyTemplate.java:247)
+	... 13 more
+30 Jan 2014 23:19:50,368 ERROR ~ 
+
+@6h57mjkk6
+Internal Server Error (500) for request GET /posts/3
+
+Template execution error (In /app/views/Application/show.html around line 4)
+Execution error occured in template /app/views/Application/show.html. Exception raised was NullPointerException : Cannot get property 'title' on null object.
+
+play.exceptions.TemplateExecutionException: Cannot get property 'title' on null object
+	at play.templates.BaseTemplate.throwException(BaseTemplate.java:86)
+	at play.templates.GroovyTemplate.internalRender(GroovyTemplate.java:272)
+	at play.templates.Template.render(Template.java:26)
+	at play.templates.GroovyTemplate.render(GroovyTemplate.java:202)
+	at play.mvc.results.RenderTemplate.<init>(RenderTemplate.java:24)
+	at play.mvc.Controller.renderTemplate(Controller.java:662)
+	at play.mvc.Controller.renderTemplate(Controller.java:642)
+	at play.mvc.Controller.render(Controller.java:699)
+	at controllers.Application.show(Application.java:27)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.NullPointerException: Cannot get property 'title' on null object
+	at /app/views/Application/show.html.(line:4)
+	at play.templates.GroovyTemplate.internalRender(GroovyTemplate.java:247)
+	... 13 more
